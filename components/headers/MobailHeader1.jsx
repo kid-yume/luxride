@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import MobileNav from "./components/MobileNav";
+import { useParams } from 'next/navigation'
 
 export default function MobailHeader1() {
   useEffect(() => {
@@ -20,11 +21,14 @@ export default function MobailHeader1() {
     };
 
     navbarTrigger?.addEventListener("click", handleClick);
-
+    
     return () => {
       navbarTrigger?.removeEventListener("click", handleClick);
     };
   }, []);
+
+  
+
   return (
     <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
       <div className="mobile-header-wrapper-inner">

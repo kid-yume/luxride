@@ -17,6 +17,7 @@ import Process from "@/components/common/process/Process";
 import Service from "@/components/homes/home-2/Service";
 import Testimonials from "@/components/common/testimonials/Testimonials2";
 import DownloadApp from "@/components/common/downloadApp/DownloadApp";
+
 export const metadata = {
   title:
     "Home 1 || Lixride Chauffeur Limousine Transport and Car Hire Nextjs Template",

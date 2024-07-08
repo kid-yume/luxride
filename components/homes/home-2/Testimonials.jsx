@@ -7,7 +7,12 @@ import React, { useEffect } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 export default function Testimonials() {
+  // Add this in your component file
+  require('react-dom');
+window.React2 = require('react');
+console.log(window.React1 === window.React2);
   const settings = {
     slidesPerView: 1,
     loop: true,
